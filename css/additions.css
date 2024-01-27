@@ -1,0 +1,330 @@
+.quotationmarks{
+    text-transform: uppercase;
+    font-weight: 600;
+}
+  .quotationmarks::before {
+    content: open-quote;
+  }
+  
+  .quotationmarks::after {
+    content: close-quote;
+  }
+  
+
+.ete-navigation {
+    width: 100%
+}
+
+.proposition-sevices,
+.proposition-sevices>ul,
+.proposition-sevices>ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.proposition-sevices,
+.proposition-sevices>ul {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center
+}
+
+.proposition-sevices>ul {
+    list-style: none;
+    padding-inline-start: 0;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    gap: 30px
+}
+
+.proposition-sevices>ul li {
+    border: 2px solid #ffaa1c;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-image: -o-linear-gradient(80deg, #000 10%, #555 50%, #000 90%);
+    background-image: linear-gradient(10deg, #000 10%, #555 50%, #000 90%);
+    background-size: 350px 80px;
+    -webkit-transform: skewX(-40deg);
+    -ms-transform: skewX(-40deg);
+    transform: skewX(-40deg);
+    text-align: center;
+    font-size: 18px;
+    -webkit-box-shadow: 7px 5px 0 0 rgb(0 0 0/51%);
+    box-shadow: 7px 5px 0 0 rgb(0 0 0/51%);
+    -webkit-transition: .8s linear .1s;
+    -o-transition: .8s linear .1s;
+    transition: .8s linear .1s;
+    z-index: 2
+}
+
+.fixiring.proposition-sevices>ul li {
+    width: 280px
+}
+
+.proposition-sevices>ul li a,
+.proposition-sevices>ul li i,
+.proposition-sevices>ul li span {
+    color: silver;
+    text-shadow: 1px 1px 1px #000;
+    display: block;
+    -webkit-transform: skewX(40deg);
+    -ms-transform: skewX(40deg);
+    transform: skewX(40deg)
+}
+
+.proposition-sevices>ul li i {
+    display: inline-block;
+    color: #ffaa1c;
+    padding-right: 10px
+}
+
+.proposition-sevices>ul li a:focus,
+.proposition-sevices>ul li a:hover {
+    text-decoration: none
+}
+
+.proposition-sevices>ul li:hover,
+.proposition-sevices>ul li:hover i {
+    -webkit-transition: .8s linear .1s;
+    -o-transition: .8s linear .1s;
+    transition: .8s linear .1s
+}
+
+.proposition-sevices>ul li:hover {
+    background-position-y: -25px;
+    -webkit-box-shadow: 8px 6px 0 0 rgb(0 0 0/71%);
+    box-shadow: 8px 6px 0 0 rgb(0 0 0/71%);
+    -webkit-transform: scale(1.05) skewX(-40deg);
+    -ms-transform: scale(1.05) skewX(-40deg);
+    transform: scale(1.05) skewX(-40deg)
+}
+
+.proposition-sevices>ul li:hover i {
+    color: silver
+}
+
+
+
+.info-calcing {
+    padding: 20px 10px
+}
+
+.button-calcing {
+    margin: 0 auto
+}
+
+:root {
+    --main-height: calc((100vw - 450px)/(1280 - 450) * (100 - 70) + 70px)
+}
+
+.grey-sec {
+    background: url(../img/bg-pattern.png)
+}
+
+.s-divider-section {
+    margin-bottom: calc(var(--main-height)*-1);
+    position: relative;
+    height: var(--main-height)
+}
+
+.s-divider {
+    position: absolute;
+    z-index: 10;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: calc(var(--main-height));
+    width: 100%;
+    -webkit-transition: .9s ease;
+    -o-transition: .9s ease;
+    transition: .9s ease;
+    top: -55%
+}
+
+.s-divider-left {
+    width: 80%;
+    background: #1c2227;
+    -webkit-transform: skewX(40deg);
+    -ms-transform: skewX(40deg);
+    transform: skewX(40deg);
+    -webkit-transform-origin: left bottom;
+    -ms-transform-origin: left bottom;
+    transform-origin: left bottom;
+    border-top: 5px solid transparent;
+    -o-border-image: -o-linear-gradient(94deg, #000 10%, #ffaa1c 50%, #0000 90%);
+    border-image: linear-gradient(356deg, #000 10%, #ffaa1c 50%, #0000 90%);
+    border-image-slice: 1;
+    -webkit-box-shadow: 20px 15px 20px -20px #252525, -14px 16px 0-20px #956410;
+    box-shadow: 20px 15px 20px -20px #252525, -14px 16px 0-20px #956410
+}
+
+.s-divider-left::after {
+    position: absolute;
+    inset: 0;
+    display: block;
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-right: 5px solid transparent;
+    -o-border-image: -o-linear-gradient(94deg, #000 10%, #ffaa1c 50%, #000 90%);
+    border-image: linear-gradient(356deg, #000 10%, #ffaa1c 50%, #000 90%);
+    border-image-slice: 1
+}
+.button-skewers {
+    background-image: -webkit-gradient(linear,left bottom,left top,color-stop(10%,#000),color-stop(50%,rgb(104 104 104/57%)),color-stop(90%,#000));
+    background-image: -o-linear-gradient(bottom,#000 10%,rgb(104 104 104/57%) 50%,#000 90%);
+    background-image: linear-gradient(0deg,#000 10%,rgb(104 104 104/57%) 50%,#000 90%);
+    position: relative;
+    text-align: center;
+    -webkit-transform: skewX(-20deg);
+    -ms-transform: skewX(-20deg);
+    transform: skewX(-20deg);
+    padding: 15px 60px;
+    display: inline-block;
+    font-size: 14px;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    -webkit-transition: .9s ease;
+    -o-transition: .9s ease;
+    transition: .9s ease
+}
+
+.button-skewers::after {
+    position: absolute;
+    content: "";
+    display: block;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    border: 3px solid #333
+}
+
+.button-skewers i,.button-skewers span {
+    text-shadow: 1px 1px 1px #000;
+    font-size: 18px
+}
+
+.button-skewers span {
+    font-family: "Merriweather",serif;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: .9px
+}
+
+.button-skewers i {
+    background-color: inherit;
+    position: absolute;
+    height: 100%;
+    margin-right: -38px;
+    font-weight: 400;
+    right: 0;
+    top: 0;
+    padding: 12px;
+    line-height: 30px;
+    color: #ffaa1c;
+    background-image: -webkit-gradient(linear,left bottom,left top,color-stop(10%,#000),color-stop(50%,#ce9e3b),color-stop(90%,#000));
+    background-image: -o-linear-gradient(bottom,#000 10%,#ce9e3b 50%,#000 90%);
+    background-image: linear-gradient(0deg,#000 10%,#ce9e3b 50%,#000 90%)
+}
+
+.button-skewers i:before,.button-skewers span {
+    display: inline-block;
+    -webkit-transform: skewX(20deg);
+    -ms-transform: skewX(20deg);
+    transform: skewX(20deg)
+}
+
+.button-skewers:active,.button-skewers:focus,.button-skewers:hover {
+    background-color: #ffaa1c;
+    -webkit-transition: .9s ease;
+    -o-transition: .9s ease;
+    transition: .9s ease
+}
+
+.button-skewers:hover span {
+    color: #fff
+}
+
+.button-hex,.button-hex:hover {
+    -webkit-transition: .9s ease;
+    -o-transition: .9s ease;
+    transition: .9s ease
+}
+
+.button-hex,.button-hex::after {
+    -webkit-clip-path: polygon(7%0,93%0,100% 50%,93% 100%,7% 100%,0 50%);
+    clip-path: polygon(7%0,93%0,100% 50%,93% 100%,7% 100%,0 50%)
+}
+
+.button-hex {
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    height: 45px;
+    border: 0;
+    width: 220px;
+    line-height: 45px;
+    background: #ffffff;
+    text-align: center
+}
+
+.button-hex span {
+    font-family: "Merriweather",serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: .8px;
+    color: silver;
+    position: absolute;
+    inset: 0;
+    content: "";
+    z-index: 10
+}
+
+.button-hex::after {
+    position: absolute;
+    display: block;
+    content: "";
+    background-image: -webkit-gradient(linear,left bottom,left top,color-stop(10%,#000),color-stop(50%,rgba(0,0,0,.57)),color-stop(90%,#000));
+    background-image: -o-linear-gradient(bottom,#000 10%,rgba(0,0,0,.57) 50%,#000 90%);
+    background-image: linear-gradient(0deg,#000 10%,rgba(0,0,0,.57) 50%,#000 90%);
+    top: 3px;
+    left: 3px;
+    right: 3px;
+    bottom: 3px
+}
+
+.button-hex:hover {
+    background-color: #ffaa1c
+}
+@media (max-width:576px) {
+    .s-divider-left {
+        border: 0;
+        width: 100%;
+        -webkit-transform: skewX(0deg);
+        -ms-transform: skewX(0deg);
+        transform: skewX(0deg)
+    }
+
+    .s-divider {
+        top: -5%
+    }
+
+    .proposition-sevices>ul li {
+        font-size: 15px
+    }
+
+    .s-divider-left::after {
+        border: 0
+    }
+
+    .s-divider-section {
+        margin-bottom: -20px
+    }
+}
